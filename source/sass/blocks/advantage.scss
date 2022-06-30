@@ -1,0 +1,50 @@
+.advantage_triangle {
+  background-image: url("../img/background/triangle.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  color: $white;
+}
+
+.advantage__text-wrapper-town {
+  padding: 3.92rem 1.07rem 2.7rem 1.07rem;
+}
+
+.advantage__text-wrapper-canyon {
+  padding-top: 2.43rem;
+  padding-bottom: 2.19rem;
+}
+
+.advantage__title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.advantage_blue {
+  background-color: $half-baked;
+}
+
+.advantage_grey {
+  background-color: $gallery;
+}
+
+.advantage__title_color,
+.advantage__number_color {
+  color: $black;
+}
+
+.advantage__number {
+  margin-top: 0;
+  margin-bottom: 1.78rem;
+}
+
+.advantage__img {
+  background-size: cover;
+}

@@ -4,14 +4,20 @@
     <meta charset="utf-8">
     <title>HTML Academy: Sedona</title>
     <link rel="stylesheet" href="/source/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body class="page__body">
    <header class="page-header">
     <nav class="nav">
      <a class="nav__logo">
-         <img src="/init/source/img/logo/logotype-mobile.svg.svg" width="101" height="84" alt="Логотип">
+         <img src="/source/img/logo/logotype-mobile.svg.svg" width="101" height="84" alt="Логотип">
      </a>
-      <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <div class="nav__toggle-container">
+          <div class="nav__toggle-line_1"></div>
+          <div class="nav__toggle-line_2"></div>
+          <div class="nav__toggle-line_3"></div>
+        </div>
       <ul class="nav__list">
         <li class="nav__item">
             <a class="nav__link">Главная</a>
@@ -30,26 +36,25 @@
    </header>
    <main class="page-main">
     <section class="sedona">
-      <img src="/init/source/img/background/welcome.svg" width="115" height="27" alt="Welcome">
-      <img src="/init/source/img/background/to-the-gorgeus.svg" width="106" height="17" alt="To the gorgeus">
-      <img src="/init/source/img/background/sedona.svg" width="282" height="48" alt="Sedona">
-      <img src="/init/source/img/background/grand-canyon.svg" width="173" height="45" alt="Причина посетить гранд каньон">
+      <img class="sedona__welcome" src="/source/img/background/welcome.svg" width="115" height="27" alt="Welcome">
+      <img class="sedona__gorgeus" src="/source/img/background/to-the-gorgeus.svg" width="106" height="17" alt="To the gorgeus">
+      <img class="sedona__sedona" src="/source/img/background/sedona.svg" width="282" height="48" alt="Sedona">
+      <img class="sedona_grand" src="/source/img/background/grand-canyon.svg" width="173" height="45" alt="Причина посетить гранд каньон">
     </section>
 
     <section class="reasons">
       <h1 class="reasons__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="reasons__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="reasons__text">Рассмотрим 5 причин, по которым <br> Седона круче, чем гранд каньон!</p>
     </section>
 
-    <div class="page-main__advantage-wrapper">
-      <section class="advantage">
-        <h2 class="advantage__title title">Настоящий городок</h2>
-        <p class="advantage__number text">— №1 —</p>
-        <p class="advantage_text text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <section class="advantage advantage_blue advantage_triangle">
+        <div class="advantage__text-wrapper-town">
+          <h2 class="advantage__title title">Настоящий городок</h2>
+          <p class="advantage__number text">— №1 —</p>
+          <p class="advantage__text text">Седона не аттракцион для туристов,там течет своя жизнь</p>
+      </div>
+        <img class="advantage__img" src="/source/img/advantages/photo-city-mob.jpg" width="320" height="260" alt="Город">
       </section>
-
-      <img class="advantage__img" src="/init/source/img/advantages/photo-city-mob.jpg" width="520" height="260" alt="Город">
-    </div>
 
     <section class="advices">
       <ul class="advices__list">
@@ -70,46 +75,43 @@
       </ul>
     </section>
 
-    <div class="page-main__advantage-wrapper">
-      <section class="advantage">
-        <h2 class="advantage__title title">Там есть мост дьявола</h2>
-        <p class="advantage__number text">— №2 —</p>
-        <p class="advantage_text text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      <section class="advantage advantage_blue">
+        <div class="advantage__text-wrapper-canyon">
+          <h2 class="advantage__title title">Там есть мост дьявола</h2>
+          <p class="advantage__number text">— №2 —</p>
+          <p class="advantage__text text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <img class="advantage__img" src="/source/img/advantages/photo-canyon-mob.jpg" width="320" height="260" alt="Каньон">
       </section>
 
-      <img class="advantage__img" src="/init/source/img/advantages/photo-canyon-mob.jpg" width="520" height="260" alt="Каньон">
-    </div>
-
-    <div class="page-main__advantage-wrapper">
-      <section class="advantage">
-        <h2 class="advantage__title title">Небольшая площадь</h2>
-        <p class="advantage__number text">— №3 —</p>
-        <p class="advantage_text text">Все интересные места находятся очень близко</p>
+      <section class="advantage advantage_grey">
+        <h2 class="advantage__title advantage__title_color title">Небольшая площадь</h2>
+        <p class="advantage__number advantage__number_color text">— №3 —</p>
+        <p class="advantage_text advantage__number_color text">Все интересные места находятся очень близко</p>
       </section>
-    </div>
 
-    <div class="page-main__advantage-wrapper">
-      <section class="advantage">
-        <h2 class="advantage__title title">Красивая дорога</h2>
-        <p class="advantage__number text">— №4 —</p>
-        <p class="advantage_text text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+      <section class="advantage advantage_grey">
+        <h2 class="advantage__title advantage__title_color title">Красивая дорога</h2>
+        <p class="advantage__number advantage__number_color text">— №4 —</p>
+        <p class="advantage_text advantage__number_color text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
       </section>
-    </div>
 
-    <div class="page-main__advantage-wrapper">
-      <section class="advantage">
-        <h2 class="advantage__title title">Небольшая площадь</h2>
-        <p class="advantage__number text">— №5 —</p>
-        <p class="advantage_text text">Большинство едет в гранд каньон и толпится там</p>
-        <!-- google  maps -->
-        <img class="map" width="320" height="350">
+      <section class="advantage advantage_grey">
+        <h2 class="advantage__title advantage__title_color title">Мало туристов</h2>
+        <p class="advantage__number advantage__number_color text">— №5 —</p>
+        <p class="advantage_text advantage__number_color text">Большинство едет в гранд каньон и толпится там</p>
       </section>
     </div>
 
     <section class="search-hotel">
       <h2 class="search-hotel__title">Заинтересовались?</h2>
-      <p class="search-hotel__text text"></p>
+      <p class="search-hotel__text text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="search-hotel__button" type="button">Найти гостиницу</button>
+    </section>
+
+    <section class="map">
+      <!-- google  maps -->
+     <img class="map" width="320" height="350">
     </section>
    </main>
 
@@ -133,6 +135,6 @@
       <img src="/init/source/img/icons/htmlacademy.svg" width="26" height="34" alt="Логотип академии">
     </div>
    </footer>
-  <script src="/js.js"></script>
+  <script src="./js/js.js"></script>
   </body>
 </html>
