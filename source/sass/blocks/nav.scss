@@ -1,0 +1,44 @@
+.nav {
+  position: relative;
+  display: flex;
+}
+
+.nav__logo {
+  position: absolute;
+  top: -1.42rem;
+  bottom: 0;
+  left: 7.4rem;
+  right: 0;
+  margin: auto;
+}
+
+.nav__list {
+  display: none;
+}
+
+.nav__toggle-container {
+  margin-left: auto;
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav__toggle-line_1, .nav__toggle-line_2, .nav__toggle-line_3 {
+  width: 23px;
+  height: 4px;
+  background-color: $half-baked;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+//Анимация меню-бургера
+.change .nav__toggle-line_1 {
+  transform: rotate(-45deg) translate(-9px, 5px);
+}
+.change .nav__toggle-line_3 {
+  transform: rotate(45deg) translate(-8px, -4px);
+}
+
+.change .nav__toggle-line_2 {
+  opacity: 0;
+}

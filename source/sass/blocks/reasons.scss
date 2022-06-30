@@ -1,0 +1,27 @@
+.reasons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.85rem;
+
+  padding: 2.28rem 1.07rem 0 1.07rem;
+  background-color: $white;
+  background-image: url("../img/background/triangle.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.reasons__title {
+  font-size: 1.28rem;
+  font-weight: 700;
+  margin: 0 0 2.8rem 0;
+  text-transform: uppercase;
+}
+
+.reasons__text {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 0.78rem 0;
+}
+

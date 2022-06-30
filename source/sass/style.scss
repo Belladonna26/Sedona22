@@ -1,2 +1,15 @@
-// Начните писать стили здесь
-@import "variables.scss";
+@import "source/sass/global/variables.scss";
+@import "source/sass/blocks/page.scss";
+@import "source/sass/blocks/text.scss";
+@import "source/sass/blocks/page-header.scss";
+@import "source/sass/blocks/nav.scss";
+@import "source/sass/blocks/page-main.scss";
+@import "source/sass/blocks/sedona.scss";
+@import "source/sass/blocks/title.scss";
+@import "source/sass/blocks/reasons.scss";
+@import "source/sass/blocks/advantage.scss";
+@import "source/sass/blocks/advices.scss";
+@import "source/sass/blocks/search-hotel.scss";
+
+
+

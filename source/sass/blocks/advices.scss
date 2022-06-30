@@ -1,0 +1,56 @@
+.advices {
+  position: relative;
+  padding: 2.5rem 3.2rem 2.5rem 5rem;
+}
+
+.advices__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advices__item_housing::before {
+  position: absolute;
+  content: "";
+
+  width: 2.78rem;
+  height: 2.57rem;
+  left: 1.42rem;
+  top: 1.85rem;
+
+  background-image: url("/source/img/icons/icon-house.svg");
+}
+
+.advices__item_souvenirs::before {
+  position: absolute;
+  content: "";
+
+  width: 2.28rem;
+  height: 2.71rem;
+  left: 1.78rem;
+  top: 11rem;
+
+  background-image: url("/source/img/icons/icon-gift.svg");
+}
+
+.advices__item_food::before {
+  position: absolute;
+  content: "";
+
+  width: 2.85rem;
+  height: 2.5rem;
+  left: 1.28rem;
+  top: 19.3rem;
+
+  background-image: url("/source/img/icons/icon-burger.svg");
+}
+
+.advices__title {
+  margin-top: 0;
+  margin-bottom: 1.78rem;
+}
+
+.advices__text {
+  margin-top: 0;
+  margin-bottom: 1.85rem;
+}
