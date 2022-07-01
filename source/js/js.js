@@ -8,3 +8,11 @@ function burgerAnimation() {
 }
 
 navToggleContainer.addEventListener("click", burgerAnimation);
+
+//Open mobile menu
+const nav = document.querySelector(".nav__list");
+function mobileMenu() {
+  nav.classList.toggle("nav__list_opened");
+}
+
+navToggleContainer.addEventListener("click", mobileMenu);

@@ -1,0 +1,26 @@
+@import url(/css/normalize.css);
+@import url(/css/header.css);
+@import url(/css/header_body.css);
+@import url(/css/slider-menu.css);
+@import url(/css/popular_product.css);
+@import url(/css/popular_manufactures.css);
+@import url(/css/service.css);
+@import url(/css/contact.css);
+@import url(/css/footer.css);
+@import url(/css/catalog_menu.css);
+@import url(/css/catalog-item_body.css);
+@import url(/css/catalog_product_description.css);
+@import url(/scss/variables.css);
+
+
+.body {
+    max-width: 1200px;
+}
+._container {
+    width: 78.3%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+

@@ -5,22 +5,69 @@
 
 .nav__logo {
   position: absolute;
-  top: -1.42rem;
+  top: -3rem;
   bottom: 0;
-  left: 7.4rem;
-  right: 0;
-  margin: auto;
+  left: 50%;
+  transform:translate(-50%, -50%);
 }
 
 .nav__list {
-  display: none;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__list_opened {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    top: -4rem;
+    z-index: 6;
+  }
+}
+
+.nav__list_opened .nav__item {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 55px;
+    background-color: $half-baked;
+    &:not(:first-child) {
+      border-top: 1px solid $shadow-top;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $shadow-bottom;
+    }
+  }
+}
+
+.nav__list_opened .nav__link {
+  @media (max-width: $tablet-width) {
+    font-size: 1.28rem;
+    line-height: 2.85rem;
+    color: $white;
+    text-decoration: none;
+  }
 }
 
 .nav__toggle-container {
-  margin-left: auto;
-
-  cursor: pointer;
-  z-index: 10;
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    // margin-left: auto;
+    // margin-right: 1.42rem;
+    top: -3.21rem;
+    left: 88%;
+    cursor: pointer;
+    z-index: 10;
+  }
 }
 
 .nav__toggle-line_1, .nav__toggle-line_2, .nav__toggle-line_3 {
@@ -34,9 +81,11 @@
 //Анимация меню-бургера
 .change .nav__toggle-line_1 {
   transform: rotate(-45deg) translate(-9px, 5px);
+  background-color: $white;
 }
 .change .nav__toggle-line_3 {
   transform: rotate(45deg) translate(-8px, -4px);
+  background-color: $white;
 }
 
 .change .nav__toggle-line_2 {
