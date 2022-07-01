@@ -1,5 +1,7 @@
 @import "source/sass/global/variables.scss";
+@import "source/sass/global/visually-hidden.scss";
 @import "source/sass/blocks/page.scss";
+@import "source/sass/blocks/button.scss";
 @import "source/sass/blocks/text.scss";
 @import "source/sass/blocks/page-header.scss";
 @import "source/sass/blocks/nav.scss";
@@ -10,6 +12,9 @@
 @import "source/sass/blocks/advantage.scss";
 @import "source/sass/blocks/advices.scss";
 @import "source/sass/blocks/search-hotel.scss";
+@import "source/sass/blocks/map.scss";
+@import "source/sass/blocks/page-footer.scss";
+@import "source/sass/blocks/copyright.scss";
 
 
 

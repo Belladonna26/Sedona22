@@ -53,7 +53,7 @@
           <p class="advantage__number text">— №1 —</p>
           <p class="advantage__text text">Седона не аттракцион для туристов,там течет своя жизнь</p>
       </div>
-        <img class="advantage__img" src="/source/img/advantages/photo-city-mob.jpg" width="320" height="260" alt="Город">
+        <img class="advantage__img" src="/source/img/advantages/photo-city-mob.jpg" width="520" height="260" alt="Город">
       </section>
 
     <section class="advices">
@@ -81,58 +81,67 @@
           <p class="advantage__number text">— №2 —</p>
           <p class="advantage__text text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="advantage__img" src="/source/img/advantages/photo-canyon-mob.jpg" width="320" height="260" alt="Каньон">
+        <img class="advantage__img" src="/source/img/advantages/photo-canyon-mob.jpg" width="520" height="260" alt="Каньон">
       </section>
 
-      <section class="advantage advantage_grey">
-        <h2 class="advantage__title advantage__title_color title">Небольшая площадь</h2>
-        <p class="advantage__number advantage__number_color text">— №3 —</p>
-        <p class="advantage_text advantage__number_color text">Все интересные места находятся очень близко</p>
-      </section>
 
-      <section class="advantage advantage_grey">
-        <h2 class="advantage__title advantage__title_color title">Красивая дорога</h2>
-        <p class="advantage__number advantage__number_color text">— №4 —</p>
-        <p class="advantage_text advantage__number_color text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
-      </section>
+      <section class="advantage advantage_grey advantage_padding">
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <h2 class="advantage__title advantage__title_color title">Небольшая площадь</h2>
+            <p class="advantage__number advantage__number_color text">— №3 —</p>
+            <p class="advantage__text advantage__number_color text">Все интересные места находятся очень близко</p>
+          </li>
 
-      <section class="advantage advantage_grey">
-        <h2 class="advantage__title advantage__title_color title">Мало туристов</h2>
-        <p class="advantage__number advantage__number_color text">— №5 —</p>
-        <p class="advantage_text advantage__number_color text">Большинство едет в гранд каньон и толпится там</p>
+          <li class="advantage__item">
+            <h2 class="advantage__title advantage__title_color title">Красивая дорога</h2>
+            <p class="advantage__number advantage__number_color text">— №4 —</p>
+            <p class="advantage__text advantage__number_color text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+          </li>
+
+          <li class="advantage__item">
+            <h2 class="advantage__title advantage__title_color title">Мало туристов</h2>
+            <p class="advantage__number advantage__number_color text">— №5 —</p>
+            <p class="advantage__text advantage__number_color text">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
       </section>
-    </div>
 
     <section class="search-hotel">
       <h2 class="search-hotel__title">Заинтересовались?</h2>
       <p class="search-hotel__text text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="search-hotel__button" type="button">Найти гостиницу</button>
+      <button class="search-hotel__button button" type="button">Найти гостиницу</button>
     </section>
 
     <section class="map">
-      <!-- google  maps -->
-     <img class="map" width="320" height="350">
+      <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380364.2965478417!2d-111.9295252!3d34.1684146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1656685127437!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
    </main>
 
    <footer class="page-footer">
      <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-     <a class="page-footer__link">#visitSEDONA</a>
-    <ul class="page-footer__list">
-      <li class="page-footer__item">
-        <a class="page-footer__link" href="twitter.com"></a>
+     <a class="page-footer__link" href="#">#visitSEDONA</a>
+    <ul class="page-footer__social-list">
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link" href="twitter.com">
+          <img src="/source/img/hubs/icon-twitter.svg" width="17.5" height="14.5" alt="Логотип Twitter">
+        </a>
       </li>
-      <li class="page-footer__item">
-        <a class="page-footer__link" href="facebook.com"></a>
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link" href="facebook.com">
+          <img src="/source/img/hubs/icon-facebook.svg" width="8.7" height="19" alt="Логотип Facebook">
+        </a>
       </li>
-      <li class="page-footer__item">
-        <a class="page-footer__link" href="youtube.com"></a>
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link" href="youtube.com">
+          <img src="/source/img/hubs/icon-youtube.svg" width="20" height="14" alt="YouTube">
+        </a>
       </li>
     </ul>
 
     <div class="page-footer__copyright copyright">
       <h2 class="copyright__title">Разработано</h2>
-      <img src="/init/source/img/icons/htmlacademy.svg" width="26" height="34" alt="Логотип академии">
+      <img src="/source/img/icons/htmlacademy.svg" width="26" height="34" alt="Логотип академии">
     </div>
    </footer>
   <script src="./js/js.js"></script>
