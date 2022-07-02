@@ -1,8 +1,9 @@
 .advantage_triangle {
-  background-image: url("../img/background/triangle.svg");
+  background-image: url("../img/background/triangle.svg"),url("/source/img/background/background_blue.svg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+  background-size: 100%;
 }
 
 .advantage {
@@ -40,7 +41,7 @@
 }
 
 .advantage__text-wrapper-town {
-  padding: 3.92rem 1.07rem 2.7rem 1.07rem;
+  padding: 20vw 1.07rem 2.7rem 1.07rem;
 }
 
 .advantage__text-wrapper-canyon {
