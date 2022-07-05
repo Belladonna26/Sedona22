@@ -8,7 +8,13 @@ $shadow-top: rgba(255, 255, 255, 0.2);
 $shadow-bottom: rgba(1, 1, 1, 0.2);
 
 // Viewports
-$mobile-width: 767px;
-$tablet-width: 1199px;
-$desktop-width: 1200px;
+$mq-mobile: 320px;
+$mq-tablet: 768px;
+$mq-desktop: 1200px;
 
+$mq-mobile-only: "(max-width: #{$mq-tablet - 1px})";
+$mq-tablet-only: "(min-width: #{$mq-tablet}) and (max-width: #{$mq-desktop - 1px})";
+$mq-before-desktop: "(max-width: #{$mq-desktop - 1px})";
+
+// Times
+$time-microinteraction: 250ms;

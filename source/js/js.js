@@ -1,3 +1,5 @@
+//Анимация бургера
+
 const navToggleContainer = document.querySelector(".nav__toggle-container");
 
 function burgerAnimation() {

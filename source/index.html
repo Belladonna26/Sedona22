@@ -11,7 +11,10 @@
    <header class="page-header">
     <nav class="nav">
      <a class="nav__logo">
-         <img src="/source/img/logo/logotype-mobile.svg.svg" width="101" height="84" alt="Логотип">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo/logotype-desktop.svg">
+        <img class="nav__logo-img" src="/source/img/logo/logotype-mobile.svg" width="101" height="84" alt="Логотип">
+      </picture>
      </a>
         <div class="nav__toggle-container">
           <div class="nav__toggle-line_1"></div>
@@ -43,7 +46,7 @@
     </section>
 
     <section class="reasons">
-      <h1 class="reasons__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="reasons__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
       <p class="reasons__text">Рассмотрим 5 причин, по которым <br> Седона круче, чем гранд каньон!</p>
     </section>
 
@@ -53,8 +56,14 @@
           <p class="advantage__number text">— №1 —</p>
           <p class="advantage__text text">Седона не аттракцион для туристов,там течет своя жизнь</p>
       </div>
-        <img class="advantage__img" src="/source/img/advantages/photo-city-mob.jpg" width="520" height="260" alt="Город">
-      </section>
+      <div class="advantage__picture-container">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.jpg">
+          <img class="advantage__img" src="/source/img/advantages/photo-city-mob.jpg" width="520" height="260" alt="Город">
+        </picture>
+      </div>
+    </section>
 
     <section class="advices">
       <ul class="advices__list">
@@ -81,7 +90,13 @@
           <p class="advantage__number text">— №2 —</p>
           <p class="advantage__text text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="advantage__img" src="/source/img/advantages/photo-canyon-mob.jpg" width="520" height="260" alt="Каньон">
+        <div class="advantage__picture-container">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/advantages/photo-canyon-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/advantages/photo-canyon-tablet.jpg">
+          <img class="advantage__img" src="/source/img/advantages/photo-canyon-mob.jpg" width="520" height="260" alt="Каньон">
+          </picture>
+        </div>
       </section>
 
 

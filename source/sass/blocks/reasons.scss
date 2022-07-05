@@ -6,6 +6,14 @@
 
   padding: 2.28rem 1.71rem 0 1.71rem;
   background-color: $white;
+  @media #{$mq-tablet-only} {
+    padding-top: 43px;
+    padding-bottom: 52px;
+  }
+  @media (min-width: $mq-desktop) {
+    padding-top: 55px;
+    padding-bottom: 41px;
+  }
 }
 
 .reasons__title {
@@ -18,6 +26,12 @@
 .reasons__text {
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0 0 0.78rem 0;
+  margin: 0;
+}
+
+.reasons__text br {
+  @media (min-width: $mq-tablet) {
+    display: none;
+  }
 }
 
