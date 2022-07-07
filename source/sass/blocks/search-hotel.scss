@@ -11,16 +11,26 @@
   margin-bottom: 2.35rem;
   font-size: 1.5rem;
   line-height: 1.85rem;
+  @media (min-width: $mq-tablet) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .search-hotel__text {
   margin-top: 0;
   margin-bottom: 1.92rem;
   line-height: 1.71rem;
+  @media (min-width: $mq-tablet) {
+    width: 435px;
+  }
 }
 
 .search-hotel__button {
   width: 20rem;
   height: 4.1rem;
+  @media (min-width: $mq-tablet) {
+    width: 458px;
+  }
 }
 

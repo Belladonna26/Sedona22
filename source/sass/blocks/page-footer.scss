@@ -6,6 +6,11 @@
 
   padding-top: 2.85rem;
   padding-bottom: 1.85rem;
+  @media (min-width: $mq-tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .page-footer__link {

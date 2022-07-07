@@ -1,4 +1,13 @@
 .page-header {
-  padding-top: 4rem;
-  // padding-right: 1.42rem;
+  height: 4rem;
+  padding-top: 1.14rem;
+  box-sizing: border-box;
+  @media #{$mq-tablet-only} {
+    padding-left: 47px;
+    padding-right: 22px;
+  }
+  @media (min-width: $mq-desktop) {
+    padding-left: 76px;
+    padding-right: 55px;
+  }
 }
