@@ -1,4 +1,4 @@
-//Анимация бургера
+// Анимация бургера
 
 const navToggleContainer = document.querySelector(".nav__toggle-container");
 
@@ -18,3 +18,5 @@ function mobileMenu() {
 }
 
 navToggleContainer.addEventListener("click", mobileMenu);
+
+

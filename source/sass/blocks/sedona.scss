@@ -12,13 +12,14 @@
   background-repeat: no-repeat;
   background-size: 100%;
   box-sizing: border-box;
+  @media (min-width: $mq-tablet) {
+    background-position-y: bottom, -15px;
+  }
   @media #{$mq-tablet-only} {
     background-image: url("/source/img/background/intro-triangle-tab.svg"), url("/source/img/background/back-tablet.jpg");
-    background-position-y: bottom, -41px;
   }
   @media (min-width: $mq-desktop) {
     background-image: url("/source/img/background/intro-triangle-tab.svg"), url("/source/img/background/back-desktop.jpg");
-    background-position-y: bottom, -41px;
   }
 }
 

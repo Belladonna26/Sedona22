@@ -1,8 +1,11 @@
 .advices {
-  // position: relative;
   padding: 2.5rem 3.2rem 2.5rem 5rem;
   @media #{$mq-tablet-only} {
     padding: 158px 31px 60px 36px;
+  }
+  @media (min-width: $mq-desktop) {
+    padding-top: 158px;
+    padding-bottom: 80px;
   }
 }
 
@@ -50,8 +53,8 @@
     top: -100px;
     background-size: contain;
   }
-  @media #{$mq-tablet-only} {
-    left: 30%;
+  @media (min-width: $mq-tablet) {
+    left: auto;
   }
 }
 
@@ -71,8 +74,8 @@
     top: -100px;
     background-size: contain;
   }
-  @media #{$mq-tablet-only} {
-    left: 35%;
+  @media (min-width: $mq-tablet) {
+    left: auto;
   }
 }
 
@@ -93,8 +96,8 @@
     top: -100px;
     background-size: contain;
   }
-  @media #{$mq-tablet-only} {
-    left: 30%;
+  @media (min-width: $mq-tablet) {
+    left: auto;
   }
 }
 
