@@ -9,7 +9,7 @@
 
 .nav__logo {
   position: absolute;
-  top: -0.78rem;
+  top: -11px;
   bottom: 0;
   left: 50%;
   transform:translate(-50%, -50%);
@@ -18,9 +18,9 @@
 
 .nav__logo-img {
   @media (min-width: $mq-desktop) {
-    top: 1rem;
-    width: 13.2rem;
-    height: 6.85rem;
+    top: 14px;
+    width: 185px;
+    height: 96px;
   }
 }
 
@@ -34,11 +34,11 @@
     }
     @media #{$mq-tablet-only} {
       justify-content: space-evenly;
-      gap: 2.85rem;
+      gap: 40px;
     }
     @media (min-width: $mq-desktop) {
       justify-content: space-evenly;
-      gap: 9.42rem;
+      gap: 132px;
     }
 
   &_opened {
@@ -47,7 +47,7 @@
       display: block;
       flex-direction: column;
       width: 100%;
-      top: -1.14rem;
+      top: -16px;
       z-index: 6;
     }
 
@@ -57,7 +57,7 @@
         justify-content: center;
         align-items: center;
 
-        min-height: 3.92rem;
+        min-height: 55px;
         background-color: $half-baked;
         &:not(:first-child) {
           border-top: 1px solid $shadow-top;
@@ -70,8 +70,9 @@
 
     .nav__link {
       @media #{$mq-mobile-only} {
-        font-size: 1.28rem;
-        line-height: 2.85rem;
+        @include font(18px, 40px);
+        // font-size: 1.28rem;
+        // line-height: 2.85rem;
         color: $white;
       }
     }
@@ -80,16 +81,16 @@
 
 .nav__item:nth-child(2) {
   @media #{$mq-tablet-only} {
-    margin-left: 3rem;
+    margin-left: 42px;
   }
 }
 
 .nav__item:nth-child(3) {
   @media #{$mq-tablet-only} {
-    margin-left: 10rem;
+    margin-left: 140px;
   }
   @media (min-width: $mq-desktop) {
-    margin-left: 21rem;
+    margin-left: 294px;
   }
 }
 
@@ -107,7 +108,7 @@
 .nav__toggle-container {
   @media #{$mq-mobile-only} {
     position: absolute;
-    top: -0.22rem;
+    top: -3px;
     left: 88%;
     cursor: pointer;
     z-index: 10;

@@ -1,3 +1,4 @@
+//Colors
 $black: #000000;
 $white: #FFFFFF;
 $half-baked: #81B3D2;
@@ -6,6 +7,11 @@ $concrete: #F2F2F2;
 $alto: #D6D6D6;
 $shadow-top: rgba(255, 255, 255, 0.2);
 $shadow-bottom: rgba(1, 1, 1, 0.2);
+
+@mixin font($font-size: 14px, $line-height: 21px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
 
 // Viewports
 $mq-mobile: 320px;

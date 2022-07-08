@@ -1,8 +1,9 @@
 .button {
+  @include font(21px, 26px);
   padding: 0;
   border: none;
-  font-size: 1.5rem;
-  line-height: 1.85rem;
+  // font-size: 21px;
+  // line-height: 26px;
   text-transform: uppercase;
   background-color: $half-baked;
   color: $white;
