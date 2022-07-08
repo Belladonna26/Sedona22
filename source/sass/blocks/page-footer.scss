@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
 
-  padding-top: 2.85rem;
-  padding-bottom: 1.85rem;
+  padding-top: 40px;
+  padding-bottom: 26px;
   @media (min-width: $mq-tablet) {
     flex-direction: row;
     justify-content: space-around;
@@ -14,9 +14,10 @@
 }
 
 .page-footer__link {
-  margin-bottom: 2.35rem;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  @include font(21x, 25px);
+  margin-bottom: 33px;
+  // font-size: 1.5rem;
+  // line-height: 1.8rem;
   font-weight: 700;
   text-decoration: none;
   color: $black;
@@ -24,9 +25,9 @@
 
 .page-footer__social-list {
   display: flex;
-  column-gap: 0.42rem;
+  column-gap: 6px;
   list-style: none;
-  margin: 0 0 3.21rem 0;
+  margin: 0 0 45px 0;
   padding: 0;
 }
 
@@ -34,8 +35,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.28rem;
-  height: 3.42rem;
+  width: 46px;
+  height: 48px;
   background-color: $half-baked;
 }
 

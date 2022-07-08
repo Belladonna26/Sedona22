@@ -34,7 +34,7 @@
 
 .advantage__item:not(:last-child) {
   position: relative;
-  margin-bottom: 3.57rem;
+  margin-bottom: 50px;
   @media (min-width: $mq-tablet) {
     margin-bottom: 0;
   }
@@ -43,9 +43,9 @@
 .advantage__item:not(:last-child)::after {
   position: absolute;
   width: 100%;
-  height: 0.07rem;
-  top: 10.7rem;
-  left: -0.6rem;
+  height: 1px;
+  top: 150px;
+  left: -8.5px;
   content: "";
   background-color: $alto;
   @media (min-width: $mq-tablet) {
@@ -86,7 +86,7 @@
 }
 
 .advantage__text-wrapper-town {
-  padding: 17vw 1.07rem 2.7rem 1.07rem;
+  padding: 17vw 15px 38px 15px;
   text-align: center;
   @media #{$mq-tablet-only} {
     padding: 40px 32px 44px 32px;
@@ -129,8 +129,9 @@
   margin-top: 0;
   margin-bottom: 1.5rem;
   @media (min-width: $mq-tablet) {
-    font-size: 21px;
-    line-height: 26px;
+    // font-size: 21px;
+    // line-height: 26px;
+    @include font(21px, 26px);
   }
 }
 
@@ -149,7 +150,7 @@
 }
 
 .advantage_padding {
-  padding: 1.78rem 2.17rem 1.78rem 2.17rem;
+  padding: 25px 30px 25px 30px;
   @media (min-width: $mq-tablet) {
     padding-top: 42px;
     box-sizing: border-box;
@@ -173,7 +174,7 @@
 
 .advantage__number {
   margin-top: 0;
-  margin-bottom: 1.78rem;
+  margin-bottom: 25px;
 }
 
 .advantage__picture-container {

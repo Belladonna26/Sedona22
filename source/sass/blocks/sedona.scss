@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
 
-  padding-top: 5rem;
-  padding-bottom: 6rem;
+  padding-top: 70px;
+  padding-bottom: 84px;
 
   background-image: url("/source/img/background/intro-triangle.svg"), url("/source/img/background/back-mobile.jpg");
   background-position: bottom;
@@ -23,21 +23,27 @@
   }
 }
 
+.sedona_height {
+  @media #{$mq-mobile-only} {
+   height: 157px;
+  }
+}
+
 .sedona__welcome {
-  margin-bottom: 0.42rem;
+  margin-bottom: 6px;
   @media (min-width: $mq-tablet) {
     width: 188px;
     height: 45px;
-    margin-bottom: 0.71rem;
+    margin-bottom: 10px;
   }
 }
 
 .sedona__gorgeus {
-  margin-bottom: 2.2rem;
+  margin-bottom: 31px;
   @media (min-width: $mq-tablet) {
     width: 174px;
     height: 29px;
-    margin-bottom: 3.64rem;
+    margin-bottom: 51px;
   }
 }
 
@@ -48,6 +54,10 @@
     height: 79px;
     margin-bottom: 60px;
   }
+}
+
+.sedona__sedona_margin {
+  margin-bottom: 0;
 }
 
 .sedona_grand {
