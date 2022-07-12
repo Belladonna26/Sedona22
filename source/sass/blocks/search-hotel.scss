@@ -10,12 +10,8 @@
   @include font(21px, 26px);
   margin-top: 0;
   margin-bottom: 33px;
-  // font-size: 1.5rem;
-  // line-height: 1.85rem;
   @media (min-width: $mq-tablet) {
     @include font(30px, 26px);
-    // font-size: 30px;
-    // line-height: 26px;
   }
 }
 
@@ -31,6 +27,19 @@
 .search-hotel__button {
   width: 280px;
   height: 57px;
+  transition: $time-microinteraction;
+  user-select: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $fountain-blue;
+  }
+  &:active {
+    background-color: $steel-blue;
+    color: $white-30;
+  }
+  &:disabled {
+    background-color: $mercury;
+  }
   @media (min-width: $mq-tablet) {
     width: 458px;
   }

@@ -78,6 +78,10 @@
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+  }
   @media #{$mq-tablet-only} {
     position: absolute;
   }
@@ -94,6 +98,33 @@
   @media (min-width: $mq-desktop) {
     top: -56px;
     left: -367px;
+  }
+}
+
+.offer__buttons-replay-image,
+.offer__buttons-subtitles-image,
+.offer__buttons-fullscreen-image {
+  @media #{$mq-mobile-only} {
+    fill: $shuttle-gray;
+  }
+  @media (min-width: $mq-tablet) {
+    fill: $white;
+  }
+  &:hover {
+    @media #{$mq-mobile-only} {
+      fill: $mine-shaft;
+    }
+    @media (min-width: $mq-tablet) {
+      fill: $white-60;
+    }
+  }
+  &:active {
+    @media #{$mq-mobile-only} {
+      fill: $mine-shaft-30;
+    }
+    @media (min-width: $mq-tablet) {
+      fill: $white-30;
+    }
   }
 }
 
