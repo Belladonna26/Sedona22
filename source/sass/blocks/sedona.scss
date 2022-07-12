@@ -23,9 +23,24 @@
   }
 }
 
+.sedona_position {
+  @media #{$mq-tablet-only} {
+    background-position-y: bottom, -231px;
+  }
+  @media (min-width: $mq-desktop) {
+    background-position-y: bottom, -220px;
+  }
+}
+
 .sedona_height {
   @media #{$mq-mobile-only} {
    height: 157px;
+  }
+  @media #{$mq-tablet-only} {
+    height: 287px;
+  }
+  @media (min-width: $mq-desktop) {
+    height: 298px;
   }
 }
 
