@@ -7,3 +7,12 @@
 .copyright__title {
   margin: 0;
 }
+
+.copyright__image {
+  &:hover {
+    fill: $half-baked;
+  }
+  &:active {
+    fill: $black-30;
+  }
+}

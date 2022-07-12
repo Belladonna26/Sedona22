@@ -2,7 +2,9 @@
 $black: #000000;
 $black-30: rgba(0, 0, 0, 0.3);
 $white: #FFFFFF;
-$white-20: rgba(255, 255, 255, 0.2);;
+$white-20: rgba(255, 255, 255, 0.2);
+$white-30: rgba(255, 255, 255, 0.3);
+$white-60: rgba(255, 255, 255, 0.6);
 $half-baked: #81B3D2;
 $gallery: #EEEEEE;
 $gallery2: #EAEAEA;
@@ -11,6 +13,14 @@ $alto: #D6D6D6;
 $mercury: #E5E5E5;
 $shadow-top: rgba(255, 255, 255, 0.2);
 $shadow-bottom: rgba(1, 1, 1, 0.2);
+$shuttle-gray: #5C6870;
+$mine-shaft: #333333;
+$mine-shaft-30: rgba(#333333,0.3);
+$fountain-blue: #669EC0;
+$steel-blue: #5496BD;
+$pine-cone: #766357;
+$kabul: #604E43;
+$kabul-30: rgba(#604E43, 0.3);
 
 @mixin font($font-size: 14px, $line-height: 21px) {
   font-size: $font-size;
