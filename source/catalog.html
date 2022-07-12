@@ -38,8 +38,146 @@
     </nav>
    </header>
    <main class="page-main">
-      <section class="sedona sedona_height">
+      <section class="sedona sedona_height sedona_position">
         <img class="sedona__sedona sedona__sedona_margin" src="/source/img/background/sedona.svg" width="282" height="48" alt="Sedona">
+      </section>
+      <section class="gallery">
+        <h1 class="gallery__title">Фото и видео</h1>
+        <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </section>
+      <section class="photofeed">
+        <ul class="photofeed__list">
+          <li class="photofeed__item">
+            <div class="photofeed__item-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photos/road-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/photos/road-tablet.jpg">
+                <img class="photofeed__image" src="/source/img/photos/road-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+              </picture>
+              <div class="photofeed__caption-wrapper">
+                <div class="photofeed__caption-container">
+                  <p class="photofeed__caption-title">Неродные просторы</p>
+                  <p class="photofeed__caption-author">Автор фото: Борис</p>
+                </div>
+                <div class="photofeed__like">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/icons/like-icon-w.svg">
+                    <img src="/source/img/icons/like-icon.svg" width="23" height="21" alt="Лайк">
+                  </picture>
+                  <p class="photofeed__like-counter">1350</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="photofeed__item">
+            <div class="photofeed__item-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photos/flower-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/photos/flower-tablet.jpg">
+                <img class="photofeed__image" src="/source/img/photos/flower-mobile.jpg" width="280" height="280" alt="Местная растительность">
+              </picture>
+              <div class="photofeed__caption-wrapper">
+                <div class="photofeed__caption-container">
+                  <p class="photofeed__caption-title">Местная растительность</p>
+                  <p class="photofeed__caption-author">Автор фото: Сергей</p>
+                </div>
+                <div class="photofeed__like">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/icons/like-icon-w.svg">
+                    <img src="/source/img/icons/like-icon.svg" width="23" height="21" alt="Лайк">
+                  </picture>
+                  <p class="photofeed__like-counter">143</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="photofeed__item">
+            <div class="photofeed__item-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photos/forest-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/photos/forest-tablet.jpg">
+                <img class="photofeed__image" src="/source/img/photos/forest-mobile.jpg" width="280" height="280" alt="Дорога на север">
+              </picture>
+              <div class="photofeed__caption-wrapper">
+                <div class="photofeed__caption-container photofeed__caption-container_background">
+                  <p class="photofeed__caption-title">Дорога на север</p>
+                  <p class="photofeed__caption-author">Автор фото: Петр</p>
+                </div>
+                <div class="photofeed__like photofeed__like_background">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/icons/like-icon-w.svg">
+                    <img src="/source/img/icons/like-icon.svg" width="23" height="21" alt="Лайк">
+                  </picture>
+                  <p class="photofeed__like-counter">96</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="photofeed__item">
+            <div class="photofeed__item-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photos/bridge-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/photos/bridge-tablet.jpg">
+                <img class="photofeed__image" src="/source/img/photos/bridge-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+              </picture>
+              <div class="photofeed__caption-wrapper">
+                <div class="photofeed__caption-container">
+                  <p class="photofeed__caption-title">Мост дьявола</p>
+                  <p class="photofeed__caption-author">Автор фото: Антон</p>
+                </div>
+                <div class="photofeed__like">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/icons/like-icon-w.svg">
+                    <img src="/source/img/icons/like-icon.svg" width="23" height="21" alt="Лайк">
+                  </picture>
+                  <p class="photofeed__like-counter">254</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="offer">
+        <h2 class="offer__title">Все еще сомневаетесь?</h2>
+        <p class="offer__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photos/video-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/photos/video-tablet.jpg">
+          <img class="offer__image" src="/source/img/photos/video-mobile.jpg" width="320" height="201" alt="Движение в потоке машин">
+        </picture>
+        <div class="offer__buttons">
+          <!-- <div class="input-range-wrapper"> -->
+            <div class="input__range">
+              <div class="input__range-track">
+                <div class="input-range__scale">
+                  <div class="input-range__bar"></div>
+                </div>
+                <button class="input-range__button" type="button" aria-label="Цена"></button>
+              </div>
+            </div>
+          <!-- </div> -->
+          <div class="offer__buttons-replay-wrapper">
+            <button class="offer__buttons-replay" type="button">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icons/replay-w.svg">
+                <img src="/source/img/icons/replay.svg" width="16" height="20" alt="Включить видео снова">
+              </picture>
+            </button>
+            <button class="offer__buttons-subtitles" type="button">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icons/subtitles-w.svg">
+                <img src="/source/img/icons/subtitles.svg" width="32" height="20" alt="Включить субтитры">
+            </picture>
+            </button>
+            <button class="offer__buttons-fullscreen" type="button">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icons/fullscreen-w.svg">
+                <img src="/source/img/icons/fullscreen.svg" width="20" height="20" alt="Развернуть во весь экран">
+              </picture>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
 
