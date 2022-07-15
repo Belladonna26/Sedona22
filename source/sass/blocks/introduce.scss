@@ -1,6 +1,16 @@
 .introduce {
   @media #{$mq-mobile-only} {
     padding: 20px 20px 25px 20px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  @media (min-width: $mq-tablet) {
+    order: 2;
+  }
+  @media #{$mq-tablet-only} {
+    padding: 0 50px 72px 27px;
+  }
+  @media (min-width: $mq-desktop) {
+    padding: 0 0 80px 79px;
   }
 }
 
@@ -14,12 +24,23 @@
   gap: 13px;
   margin-top: 0;
   margin-bottom: 20px;
+  @media (min-width: $mq-tablet) {
+    gap: 15px;
+  }
+}
+
+.introduce__field_patronymic {
+  margin-bottom: 0;
 }
 
 .introduce__title {
-  text-align: center;
   margin-top: 0;
   @media #{$mq-mobile-only} {
+    @include font (18px, 26px);
+    text-align: center;
     margin-bottom: 19px;
+  }
+  @media (min-width: $mq-tablet) {
+    margin-bottom: 54px;
   }
 }

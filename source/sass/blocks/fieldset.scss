@@ -1,0 +1,95 @@
+.fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  @media #{$mq-mobile-only} {
+    border-bottom: 1px solid $mercury;
+  }
+}
+
+.fieldset_impression {
+  position: relative;
+  @media #{$mq-mobile-only} {
+    margin-top: 20px;
+    padding-left: 24px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+  @media (min-width: $mq-tablet) {
+    order: 1;
+    &::after {
+      position: absolute;
+      width: 1px;
+      height: 292px;
+      content: "";
+      background-color: $alto;
+    }
+  }
+   @media #{$mq-tablet-only} {
+      padding-left: 59px;
+      padding-right: 56px;
+      padding-bottom: 85px;
+    &::after {
+      top: -83px;
+      left: 377px;
+    }
+  }
+  @media (min-width: $mq-desktop) {
+    padding-left: 128px;
+    padding-right: 167px;
+    padding-bottom: 94px;
+    &::after {
+      top: -92px;
+      left: 640px;
+    }
+}
+}
+
+.fieldset_sights {
+  @media (min-width: $mq-tablet) {
+    order: 4;
+  }
+}
+
+.fieldset__title {
+  text-align: center;
+  font-weight: 700;
+  @media #{$mq-mobile-only} {
+    @include font (18px, 26px);
+  }
+  @media (min-width: $mq-tablet) {
+    @include font (21px, 26px);
+  }
+}
+
+.fieldset__title_impression {
+  @media #{$mq-mobile-only} {
+    margin-bottom: 25px;
+  }
+  @media (min-width: $mq-tablet) {
+    margin-bottom: 60px;
+  }
+  @media (min-width: $mq-desktop) {
+    margin-left: 72px;
+    margin-bottom: 60px;
+  }
+}
+
+.fieldset__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fieldset__item_impression {
+  @media #{$mq-mobile-only} {
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  }
+  @media (min-width: $mq-tablet) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

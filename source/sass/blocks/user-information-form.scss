@@ -1,0 +1,12 @@
+.user-information-form {
+  @media (min-width: $mq-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.user-information-form__submit {
+  @media (min-width: $mq-tablet) {
+    order: 6;
+  }
+}

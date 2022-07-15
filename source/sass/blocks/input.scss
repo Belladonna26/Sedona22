@@ -7,6 +7,12 @@
   background-color: $concrete;
   border: none;
   box-sizing: border-box;
+  @media #{$mq-tablet-only} {
+    min-width: 210px;
+  }
+  @media (min-width: $mq-desktop) {
+    min-width: 312px;
+  }
 }
 
 .input::placeholder {
