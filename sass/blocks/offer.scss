@@ -1,0 +1,155 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 27px 49px 27px;
+  @media (min-width: $mq-tablet) {
+    padding: 0 60px 35px 60px;
+  }
+  @media (min-width: $mq-desktop) {
+    padding: 0 200px 85px 200px;
+  }
+}
+
+.offer__title {
+  margin-top: 0;
+  @media #{$mq-mobile-only} {
+    @include font(18px, 26px);
+    margin-bottom: 35px;
+  }
+  @media (min-width: $mq-tablet) {
+    @include font(30px, 26px);
+    margin-bottom: 40px;
+  }
+  @media (min-width: $mq-desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.offer__text {
+  @include font(14px, 24px);
+  margin-top: 0;
+  @media #{$mq-mobile-only} {
+    width: 266px;
+    margin-bottom: 33px;
+  }
+  @media (min-width: $mq-tablet) {
+    width: 445px;
+  }
+  @media (min-width: $mq-desktop) {
+    width: 540px;
+  }
+}
+
+.offer__image {
+  @media (min-width: $mq-tablet) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.offer__buttons {
+  position: relative;
+  @media #{$mq-mobile-only} {
+    width: 280px;
+    height: 66px;
+    background-color: $concrete;
+  }
+}
+
+.offer__buttons-replay-wrapper {
+  @media #{$mq-mobile-only} {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 18px 23px 15px;
+  }
+  @media #{$mq-tablet-only} {
+    position: relative;
+  }
+  @media (min-width: $mq-desktop) {
+    position: relative;
+  }
+}
+
+.offer__buttons-replay,
+.offer__buttons-subtitles,
+.offer__buttons-fullscreen {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+  }
+  @media #{$mq-tablet-only} {
+    position: absolute;
+  }
+  @media (min-width: $mq-desktop) {
+    position: absolute;
+  }
+}
+
+.offer__buttons-replay {
+  @media #{$mq-tablet-only} {
+    top: -59px;
+    left: -278px;
+  }
+  @media (min-width: $mq-desktop) {
+    top: -56px;
+    left: -367px;
+  }
+}
+
+.offer__buttons-replay-image,
+.offer__buttons-subtitles-image,
+.offer__buttons-fullscreen-image {
+  @media #{$mq-mobile-only} {
+    fill: $shuttle-gray;
+  }
+  @media (min-width: $mq-tablet) {
+    fill: $white;
+  }
+  &:hover {
+    @media #{$mq-mobile-only} {
+      fill: $mine-shaft;
+    }
+    @media (min-width: $mq-tablet) {
+      fill: $white-60;
+    }
+  }
+  &:active {
+    @media #{$mq-mobile-only} {
+      fill: $mine-shaft-30;
+    }
+    @media (min-width: $mq-tablet) {
+      fill: $white-30;
+    }
+  }
+}
+
+.offer__buttons-subtitles {
+  @media #{$mq-mobile-only} {
+    margin-left: 130px;
+    margin-right: 14px;
+  }
+  @media #{$mq-tablet-only} {
+    top: -56px;
+    right: -245px;
+  }
+  @media (min-width: $mq-desktop) {
+    top: -56px;
+    right: -320px;
+  }
+}
+
+.offer__buttons-fullscreen {
+  @media #{$mq-tablet-only} {
+    top: -56px;
+    right: -298px;
+  }
+  @media (min-width: $mq-desktop) {
+    top: -56px;
+    right: -370px;
+  }
+}

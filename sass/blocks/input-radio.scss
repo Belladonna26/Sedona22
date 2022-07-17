@@ -1,0 +1,76 @@
+.input-radio {
+  display: flex;
+  align-items: flex-start;
+}
+
+.input-radio__control:disabled + .input-radio__label-wrapper {
+  opacity: 0.3;
+}
+
+.input-radio__control:focus-visible + .input-radio__label-wrapper .input-radio__button {
+  box-shadow: 0 0 0 2px $half-baked;
+}
+
+.input-radio__control:focus-visible {
+  opacity: 1;
+}
+
+.input-radio__control:checked + .input-radio__label-wrapper .input-radio__button::before {
+  visibility: visible;
+}
+
+.input-radio__label-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 26px;
+  cursor: pointer;
+  transition: opacity $time-microinteraction;
+}
+
+.input-radio__label-wrapper:hover .input-radio__button {
+  background-color: $mercury;
+  border: 5px solid $mercury;
+}
+
+.input-radio__label-wrapper:active .input-radio__button {
+  background-color: $alto;
+  border: 5px solid $alto;
+}
+
+.input-radio__label-wrapper:active .input-radio__button::before {
+  opacity: 0.3;
+}
+
+.input-radio__label {
+  @include font (18px, 26px);
+  overflow: hidden;
+  max-width: 200px;
+  font-weight: 700;
+  text-transform: none;
+  text-overflow: ellipsis;
+}
+
+.input-radio__button {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+
+  outline: 0;
+  border-radius: 50%;;
+  border: 5px solid $concrete;
+  background-color: $concrete;
+  &::before {
+    display: block;
+    visibility: hidden;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    content: "";
+    background-color: $mine-shaft;
+  }
+}
