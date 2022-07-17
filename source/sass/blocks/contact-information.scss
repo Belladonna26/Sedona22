@@ -1,58 +1,45 @@
 .contact-information {
+  margin: 0;
+  padding: 0;
+  border: 0;
   @media #{$mq-mobile-only} {
+    margin-top: 20px;
     padding: 20px 20px 28px 20px;
     border-bottom: 1px solid $mercury;
   }
   @media (min-width: $mq-tablet) {
+    border-top: 1px solid $alto;
     order: 3;
   }
   @media #{$mq-tablet-only} {
     width: 100%;
-    padding-left: 69px;
-    padding-right: 60px;
     padding-bottom: 51px;
   }
   @media (min-width: $mq-desktop) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 78px 51px 78px;
+    width: 100%;
+    padding-bottom: 51px;
   }
 }
 
 .contact-information__title {
   text-align: center;
-  margin-top: 0;
+  font-weight: 700;
   @media #{$mq-mobile-only} {
     @include font (18px, 26px);
-    margin-bottom: 17px;
   }
   @media #{$mq-tablet-only} {
     margin-bottom: 20px;
   }
+  @media (min-width: $mq-tablet) {
+    @include font (21px, 26px);
+    width: 309px;
+  }
   @media (min-width: $mq-desktop) {
-    position: relative;
     flex-basis: 100%;
     margin-bottom: 85px;
-    color: $white;
-    &::before {
-      position: absolute;
-      width: 280px;
-      height: 1px;
-      background-color: $alto;
-      top: 15px;
-      left: 0;
-      content: "";
-    }
-    &::after{
-      position: absolute;
-      width: 280px;
-      height: 1px;
-      background-color: $alto;
-      top: 15px;
-      right: 0;
-      content: "";
-    }
   }
 }
 
@@ -125,6 +112,18 @@
   @media #{$mq-tablet-only} {
     margin-left: 22px;
     margin-bottom: 8px;
+  }
+}
+
+.contact-information__label_tel {
+  @media (min-width: $mq-desktop) {
+    display: none;
+  }
+}
+
+.contact-information__label_visible {
+  @media #{$mq-before-desktop} {
+    display: none;
   }
 }
 

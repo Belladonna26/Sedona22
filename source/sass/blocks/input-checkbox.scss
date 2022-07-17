@@ -1,0 +1,70 @@
+.input-checkbox {
+  display: flex;
+}
+
+.input-checkbox__control:disabled + .input-checkbox__label-wrapper {
+  opacity: 0.3;
+}
+
+.input-checkbox__control:focus-visible + .input-checkbox__label-wrapper .input-checkbox__button {
+  box-shadow: 0 0 0 2px $half-baked;
+}
+
+.input-checkbox__control:checked + .input-checkbox__label-wrapper .input-checkbox__button {
+  background-image: url("/source/img/inputs/checkbox-on.svg");
+  background-repeat: no-repeat;
+  border: 7px solid $concrete;
+}
+
+.input-checkbox__control:checked:hover + .input-checkbox__label-wrapper .input-checkbox__button {
+  background-image: url("/source/img/inputs/checkbox-on-hover.svg");
+  background-repeat: no-repeat;
+  border: 7px solid $mercury;
+}
+
+.input-checkbox__control:checked:active + .input-checkbox__label-wrapper .input-checkbox__button {
+  background-image: url("/source/img/inputs/checkbox-on-active.svg");
+  background-repeat: no-repeat;
+  border: 7px solid $alto;
+}
+
+.input-checkbox__label-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 29px;
+  cursor: pointer;
+  transition: opacity $time-microinteraction;
+}
+
+.input-checkbox__label-wrapper:hover .input-checkbox__button {
+  background-color: $mercury;
+  border: 7px solid $mercury;
+}
+
+.input-checkbox__label-wrapper:active .input-checkbox__button {
+  background-color: $alto;
+  border: 7px solid $alto;
+}
+
+
+.input-checkbox__button {
+  width: 46px;
+  height: 46px;
+  background-color: $concrete;
+  background-position-x: center;
+  background-position-y: center;
+
+  box-sizing: border-box;
+  border: 5px solid $concrete;
+  border-radius: 7px;
+  outline: none;
+}
+
+.input-checkbox__label {
+  position: relative;
+  overflow: hidden;
+
+  max-width: 200px;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+}

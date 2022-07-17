@@ -107,6 +107,11 @@
   cursor: pointer;
   @media #{$mq-tablet-only} {
     line-height: 1.85rem;
+  }
+  @media (min-width: $mq-tablet) {
+    color: $black;
+  }
+  @media (min-width: $mq-mobile) {
     &:hover {
       color: $half-baked;
     }
@@ -122,9 +127,6 @@
     &:focus:active {
       color: $kabul-30;
     }
-  }
-  @media (min-width: $mq-tablet) {
-    color: $black;
   }
 }
 

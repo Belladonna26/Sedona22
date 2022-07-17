@@ -27,19 +27,6 @@
 .search-hotel__button {
   width: 280px;
   height: 57px;
-  transition: $time-microinteraction;
-  user-select: none;
-  cursor: pointer;
-  &:hover {
-    background-color: $fountain-blue;
-  }
-  &:active {
-    background-color: $steel-blue;
-    color: $white-30;
-  }
-  &:disabled {
-    background-color: $mercury;
-  }
   @media (min-width: $mq-tablet) {
     width: 458px;
   }
