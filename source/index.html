@@ -38,7 +38,7 @@
     </nav>
    </header>
    <main class="page-main">
-    <section class="sedona">
+    <section class="sedona sedona_background">
       <img class="sedona__welcome" src="/source/img/background/welcome.svg" width="115" height="27" alt="Welcome">
       <img class="sedona__gorgeus" src="/source/img/background/to-the-gorgeus.svg" width="106" height="17" alt="To the gorgeus">
       <img class="sedona__sedona" src="/source/img/background/sedona.svg" width="282" height="48" alt="Sedona">
@@ -58,8 +58,13 @@
       </div>
       <div class="advantage__picture-container">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.jpg">
+          <source media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.webp, img/advantages/photo-city-desktop2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.webp, img/advantages/photo-city-tablet2x.webp 2x" type="image/webp">
+          <source srcset="img/advantages/photo-city-mob.webp, img/advantages/photo-city-mob@2x.webp 2x" type="image/webp">
+
+          <source media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.jpg, img/advantages/photo-city-desktop2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.jpg, img/advantages/photo-city-tablet2x.jpg 2x">
+          <source srcset="img/advantages/photo-city-mob.jpg, img/advantages/photo-city-mob@2x.jpg 2x">
           <img class="advantage__img" src="/source/img/advantages/photo-city-mob.jpg" width="520" height="260" alt="Город">
         </picture>
       </div>
@@ -92,8 +97,13 @@
         </div>
         <div class="advantage__picture-container">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/advantages/photo-canyon-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/advantages/photo-canyon-tablet.jpg">
+            <source media="(min-width: 1200px)" srcset="img/advantages/photo-canyon-desktop.webp, img/advantages/photo-canyon-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/advantages/photo-canyon-tablet.webp, img/advantages/photo-canyon-tablet@2x.webp 2x">
+            <source srcset="img/advantages/photo-canyon-mob.webp, img/advantages/photo-canyon-mob@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/advantages/photo-canyon-desktop.jpg, img/advantages/photo-canyon-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/advantages/photo-canyon-tablet.jpg, img/advantages/photo-canyon-tablet@2x.jpg 2x">
+            <source srcset="img/advantages/photo-canyon-mob.jpg, img/advantages/photo-canyon-mob@2x.jpg 2x">
           <img class="advantage__img" src="/source/img/advantages/photo-canyon-mob.jpg" width="520" height="260" alt="Каньон">
           </picture>
         </div>

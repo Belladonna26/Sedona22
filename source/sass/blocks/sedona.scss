@@ -12,6 +12,9 @@
   background-repeat: no-repeat;
   background-size: 100%;
   box-sizing: border-box;
+  @media (min-resolution: 2dppx) {
+    background-image: url("/source/img/background/intro-triangle-tab.svg"), url("/source/img/background/back-mobile2x.jpg");
+  }
   @media (min-width: $mq-tablet) {
     background-position-y: bottom, -15px;
   }
@@ -20,6 +23,15 @@
   }
   @media (min-width: $mq-desktop) {
     background-image: url("/source/img/background/intro-triangle-tab.svg"), url("/source/img/background/back-desktop.jpg");
+  }
+}
+
+.sedona_background {
+  @media (min-width: $mq-tablet) {
+    @media (min-resolution: 2dppx) {
+      background-position-y: bottom, -100px;
+      background-image: url("/source/img/background/intro-triangle-tab.svg"), url("/source/img/background/back-tablet2x.jpg");
+    }
   }
 }
 
